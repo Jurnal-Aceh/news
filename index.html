@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Aceh - Portal Berita Terpercaya</title>
+    <style>
+        :root {
+            --primary: #1a5f7a;
+            --secondary: #c89d10;
+            --dark: #222;
+            --light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        /* News Cards */
+        .main-news {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .category {
+            background: var(--primary);
+            color: white;
+            padding: 5px 12px;
+            font-size: 12px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .card h2 {
+            margin: 15px 0;
+            color: var(--dark);
+        }
+
+        .meta {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            border-left: 4px solid var(--secondary);
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .trending-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .trending-item img {
+            width: 80px;
+            height: 60px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            .card img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Jurnal Aceh</h1>
+        <p>Jendela Informasi Serambi Mekkah</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#">Banda Aceh</a>
+    <a href="#">Ekonomi</a>
+    <a href="#">Wisata</a>
+    <a href="#">Kuliner</a>
+    <a href="#">Syariat</a>
+</nav>
+
+<div class="container">
+    <main class="main-news">
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1590059393305-65561a15a8c9?q=80&w=1000&auto=format&fit=crop" alt="Masjid Raya Baiturrahman">
+            <div class="card-content">
+                <span class="category">Wisata Religi</span>
+                <h2>Masjid Raya Baiturrahman Menjadi Destinasi Utama Wisatawan Mancanegara Tahun 2026</h2>
+                <div class="meta">Oleh: Admin | 16 Januari 2026</div>
+                <p>Peningkatan fasilitas dan kebersihan di area Masjid Raya Baiturrahman menarik ribuan wisatawan dari Malaysia dan Brunei Darussalam pada awal tahun ini...</p>
+                <a href="#" style="color: var(--primary); font-weight: bold;">Baca Selengkapnya →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?q=80&w=1000&auto=format&fit=crop" alt="Kopi Aceh">
+            <div class="card-content">
+                <span class="category">Ekonomi Kreatif</span>
+                <h2>Ekspor Kopi Gayo Meningkat 20%, Petani Aceh Tengah Raih Keuntungan Besar</h2>
+                <div class="meta">Oleh: Redaksi Jurnal | 15 Januari 2026</div>
+                <p>Permintaan kopi Arabika Gayo di pasar Eropa dan Amerika Serikat terus melonjak. Pemerintah Aceh berkomitmen terus mendukung sertifikasi organik bagi para petani lokal.</p>
+                <a href="#" style="color: var(--primary); font-weight: bold;">Baca Selengkapnya →</a>
+            </div>
+        </article>
+    </main>
+
+    <aside class="sidebar">
+        <h3>Berita Terpopuler</h3>
+        <div class="trending-item">
+            <img src="https://images.unsplash.com/photo-1544333346-646700c242c7?q=80&w=200&auto=format&fit=crop" alt="Pantai Aceh">
+            <div>
+                <h4 style="margin:0; font-size:14px;">Pesona Pantai Lampuuk yang Tak Pernah Pudar</h4>
+            </div>
+        </div>
+        <div class="trending-item">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=200&auto=format&fit=crop" alt="Kuliner Aceh">
+            <div>
+                <h4 style="margin:0; font-size:14px;">Mie Aceh Kepiting: Kuliner Wajib Saat ke Banda Aceh</h4>
+            </div>
+        </div>
+        <div class="trending-item">
+            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=200&auto=format&fit=crop" alt="Pembangunan">
+            <div>
+                <h4 style="margin:0; font-size:14px;">Update Pembangunan Jalan Tol Trans Sumatera di Aceh</h4>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2026 Jurnal Aceh - Media Informasi Rakyat Aceh. Seluruh Hak Cipta Dilindungi.</p>
+</footer>
+
+</body>
+</html>
